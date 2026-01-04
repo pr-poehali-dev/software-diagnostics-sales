@@ -116,8 +116,15 @@ const Index = () => {
       </header>
 
       <main>
-        <section id="home" className="py-20 md:py-32">
-          <div className="container mx-auto px-4">
+        <section id="home" className="relative py-20 md:py-32 overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://cdn.poehali.dev/projects/abfb3fdc-c3dc-431c-8901-b149fa3fea02/files/3224737d-83d8-4184-aea4-c73755271903.jpg" 
+              alt="Automotive diagnostics" 
+              className="w-full h-full object-cover opacity-10"
+            />
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="mx-auto max-w-4xl text-center animate-fade-in">
               <Badge className="mb-4" variant="secondary">
                 Профессиональная диагностика
@@ -147,6 +154,13 @@ const Index = () => {
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Всё необходимое для профессиональной диагностики в одном решении
               </p>
+            </div>
+            <div className="mb-12 rounded-2xl overflow-hidden max-w-5xl mx-auto shadow-2xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/abfb3fdc-c3dc-431c-8901-b149fa3fea02/files/67576b78-5502-487f-a27f-9edd93167c0e.jpg" 
+                alt="Professional automotive diagnostics" 
+                className="w-full h-auto"
+              />
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {features.map((feature, index) => (
